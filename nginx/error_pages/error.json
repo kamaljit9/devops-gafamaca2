@@ -1,0 +1,6 @@
+{
+  "error": {
+    "message": "Service temporarily unavailable or gateway error",
+    "code": "GATEWAY_ERROR"
+  }
+}

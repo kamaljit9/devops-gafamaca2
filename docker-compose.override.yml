@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  api:
+    volumes:
+      - ./api:/app
+      - /app/node_modules
+      - ./keys:/app/keys
+    command: node src/server.js
+    environment:
+      - NODE_ENV=development
+    ports:
+      - "3005:3000"
+      - "9229:9229" # Debug port

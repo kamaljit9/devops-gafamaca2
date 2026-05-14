@@ -1,0 +1,11 @@
+node_modules
+.git
+.github
+tests
+dist
+npm-debug.log
+.env*
+keys/*.pem
+*.md
+Makefile
+docker-compose*
