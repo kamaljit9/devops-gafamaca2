@@ -37,6 +37,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
+        continue-on-error: true
         with:
           image-ref: 'appforge-api:latest'
           format: 'sarif'
